@@ -17,9 +17,9 @@ class Agent:
         self._name = name
         self._lock = asyncio.Lock()
         self._harness = DeepSeekHarness(
-            provider="google",
-            model="gemini-3.6-flash",
-            max_tokens=16_384,
+            provider=settings.provider,
+            model=settings.model,
+            max_tokens=settings.max_tokens,
             cwd="/app",
             dsh_bin="/usr/local/bin/dsh",
             profile="docmind",
