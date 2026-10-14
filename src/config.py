@@ -7,6 +7,7 @@ class Settings(BaseSettings):
 
     provider: str
     model: str
+    live_model: str
     max_tokens: PositiveInt
     gemini_api_key: SecretStr
     mcp_url: AnyHttpUrl

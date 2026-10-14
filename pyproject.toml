@@ -9,6 +9,7 @@ package-mode = false
 [tool.poetry.dependencies]
 python = ">=3.11,<4.0"
 fastapi = "^0.142.2"
+google-genai = "^2.29.0"
 langgraph = "^1.2.12"
 pydantic = "^2.13.5"
 pydantic-settings = "^2.15.0"
